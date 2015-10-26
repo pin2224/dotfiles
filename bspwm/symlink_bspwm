@@ -1,0 +1,8 @@
+#!/bin/bash
+
+this=$(readlink -f "$0" )
+path=$(dirname "$this")
+
+ln -sf $path/bspwmrc ~/.config/bspwm/bspwmrc
+ln -sf $path/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
