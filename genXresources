@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "!============URXVT===========" > ./Xresources
+sed -e 's/^/urxvt./' urxvt/X >> ./Xresources
+
+echo "!============COLROS==========" >> ./Xresources
+cat ./colors >> ./Xresources
