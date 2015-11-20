@@ -1,4 +1,5 @@
 ctrlp.vim
 neobundle.vim
+nerdtree
 vim-colorschemes
 vimshell
