@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd $(dirname $0)
+options=" -w 200 -h 50 -q -o 0.8 -x 860 -y 895 -nb #1b1b1b -sb #1b1b1b -nf #1b1b1b"
+a=`cat programs | awk '{print $1}' | dmenu $options`
+echo $a
+if [ $a ]
+then
+        b=`grep $a programs -n`
+
+        c=`echo $b | cut -f1 -d":"`
+        c+='p'
+
+        eval `sed -n "$c" programs | awk '{print $2}'`
+fi

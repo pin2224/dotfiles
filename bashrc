@@ -5,6 +5,8 @@ alias ls='ls --color=auto'
 alias ll='ls -las'
 alias la='ls -a'
 
+alias connect='sudo ip l set wlp13s0 down; sudo killall dhcpcd; sudo netctl start'
+
 alias pacman='sudo pacman --color=auto'
 eval $(thefuck --alias fuck)
 
@@ -30,3 +32,5 @@ BLUE="\[\033[01;34m\]"
 GREEN="\[\033[1;32m\]"
 
 export PS1=" \W$BLUE\$(parse_git_branch)$GREEN\$(parse_svn_branch)$BLACK "
+export SVN_EDITOR=vim
+export PATH=$PATH":/home/nikola/.scripts"
