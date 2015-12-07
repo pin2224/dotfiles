@@ -1,1 +1,3 @@
 scrollBar: false
+perl-ext-common: keyboard-select
+keysym.M-Escape: perl:keyboard-select:activate

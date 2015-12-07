@@ -5,6 +5,7 @@ xrandr --auto
 
 hsetroot -full ~/.background
 
+compton -c -l 0 -t 0 -o 0.4 --blur-background -C -b
 
 sxhkd &
 exec bspwm -c ~/.config/bspwm/bspwmrc

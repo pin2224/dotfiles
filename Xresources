@@ -1,11 +1,7 @@
 !============URXVT===========
 urxvt.scrollBar: false
-urxvt.perl-ext-common: default,clipboard
-urxvt.iso14755: False
-urxvt.keysym.Shift-Control-C: perl:clipboard:copy
-urxvt.keysym.Shift-Control-V: perl:clipboard:paste
-urxvt.clipboard.copycmd:  xsel -ib
-urxvt.clipboard.pastecmd: xsel -ob
+urxvt.perl-ext-common: keyboard-select
+urxvt.keysym.M-Escape: perl:keyboard-select:activate
 !============COLROS==========
 ! Base16 Atelier Lakeside
 ! Scheme: Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside/)
