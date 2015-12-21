@@ -5,6 +5,9 @@ alias ls='ls --color=auto'
 alias ll='ls -las'
 alias la='ls -a'
 
+alias lid='systemd-inhibit --what=handle-lid-switch:sleep --who=$(id -un) --why="I want" --mode=block cat'
+
+
 alias connect='sudo ip l set wlp13s0 down; sudo killall dhcpcd; sudo netctl start'
 
 alias pacman='sudo pacman --color=auto'
