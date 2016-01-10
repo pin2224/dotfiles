@@ -3,7 +3,7 @@ xrandr --auto
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-hsetroot -full ~/.background
+hsetroot -fill ~/.background
 
 compton -c -l 0 -t 0 -o 0.4 --blur-background -C -b
 

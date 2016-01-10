@@ -1,7 +1,11 @@
 !============URXVT===========
 urxvt.scrollBar: false
-urxvt.perl-ext-common: keyboard-select
+urxvt.perl-ext-common: keyboard-select,resize-font
 urxvt.keysym.M-Escape: perl:keyboard-select:activate
+urxvt.resize-font.smaller: C-Down
+urxvt.resize-font.bigger: C-Up
+urxvt.iso14755: false
+urxvt.iso14755_52: false
 !============COLROS==========
 ! Base16 Atelier Lakeside
 ! Scheme: Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside/)

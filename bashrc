@@ -5,14 +5,20 @@ alias ls='ls --color=auto'
 alias ll='ls -las'
 alias la='ls -a'
 
-alias lid='systemd-inhibit --what=handle-lid-switch:sleep --who=$(id -un) --why="I want" --mode=block cat'
+alias grep='grep -i --color=auto'
 
+alias lid='systemd-inhibit --what=handle-lid-switch:sleep --who=$(id -un) --why="I want" --mode=block cat'
 
 alias connect='sudo ip l set wlp13s0 down; sudo killall dhcpcd; sudo netctl start'
 
 alias pacman='sudo pacman --color=auto'
-eval $(thefuck --alias fuck)
 
+alias sdiff='svn diff' 
+
+#alias  L=' | less'   #Needs ZSH :(
+#alias  G=' | grep'   #Needs ZSH :(
+
+eval $(thefuck --alias fuck)
 
 parse_git_branch () {
   git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)# \1#'
