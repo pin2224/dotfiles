@@ -4,6 +4,9 @@ alias setback='hsetroot -full ~/.background'
 alias ls='ls --color=auto'
 alias ll='ls -las'
 alias la='ls -a'
+alias song='mpc current'
+
+alias dd='dd status=progress'
 
 alias grep='grep -i --color=auto'
 
@@ -14,6 +17,7 @@ alias connect='sudo ip l set wlp13s0 down; sudo killall dhcpcd; sudo netctl star
 alias pacman='sudo pacman --color=auto'
 
 alias sdiff='svn diff' 
+alias du='du -h'
 
 #alias  L=' | less'   #Needs ZSH :(
 #alias  G=' | grep'   #Needs ZSH :(

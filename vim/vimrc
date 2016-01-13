@@ -1,10 +1,9 @@
 syntax on
 set nu
-set expandtab
 set incsearch
 set backspace=indent,eol,start
-set mouse=a
 set ruler
+set mouse=a
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -15,14 +14,19 @@ set relativenumber
 map <F9> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< <CR>
 map <F8> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< < in<CR>
 
-map <C-i> :vs in <CR> <C-w><C-r> <CR> :vert res 50 <CR> <C-w>h <CR>
+"map <C-i> :vs in <CR> <C-w><C-r> <CR> :vert res 50 <CR> <C-w>h <CR>
 
 map q o <ESC>
 map Q O <ESC>
 
+nnoremap <C-j> :m+<CR> ==
+nnoremap <C-k> :m-2<CR> ==
+
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
 map <S-j> 5j
 map <S-k> 5k
-
 
 
 "NeoBundle Scripts-----------------------------
