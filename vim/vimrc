@@ -11,10 +11,10 @@ set autoread
 set relativenumber
 
 " map <F9> :w <CR> :vsplit <CR> :wincmd l <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< % && clear' && echo '' && time ./%< <CR>
-map <F9> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< <CR>
-map <F8> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< < in<CR>
+map <F11> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< <CR>
+map <F10> :w <CR> :!clear && time sh -c 'g++ -std=c++14 -O2 -o %< %' && echo '' && time ./%< < in<CR>
 
-"map <C-i> :vs in <CR> <C-w><C-r> <CR> :vert res 50 <CR> <C-w>h <CR>
+map <F9> :vs in<CR>:vertical resize 50<CR><C-w><C-x>
 
 map q o <ESC>
 map Q O <ESC>
