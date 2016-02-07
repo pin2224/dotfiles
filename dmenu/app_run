@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dmenu_run -w 400 -h 50 -q -x 760 -y 895 -nb '#1b1b1b' -sb '#1b1b1b' -nf '#4b4b4b' -fn 'helvetica' -sf '#ffffff' -p "run: " 
+dmenu_run -w 400 -h 50 -q -x 760 -y 895 -nb '#1b1b1b' -sb '#1b1b1b' -nf '#4b4b4b' -sf '#ffffff' -p "run: " 
 #cd $(dirname $0)
 #options=" -w 400 -h 50 -q -o 0.8 -x 760 -y 895 -nb #1b1b1b -sb #1b1b1b -nf #1b1b1b -fn helvetica"
 #a=`cat programs | awk '{print $1}' | dmenu $options`

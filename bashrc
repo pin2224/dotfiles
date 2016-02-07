@@ -1,10 +1,15 @@
 alias v='vim'
 alias setback='hsetroot -full ~/.background'
 
+alias ..='cd ..'
+alias ...='..;..'
+
 alias ls='ls --color=auto'
 alias ll='ls -las'
 alias la='ls -a'
+alias sl='ls'
 alias song='mpc current'
+alias messenger='google-chrome-unstable --app=https://www.messenger.com'
 
 alias dd='dd status=progress'
 
@@ -18,6 +23,7 @@ alias pacman='sudo pacman --color=auto'
 
 alias sdiff='svn diff' 
 alias du='du -h'
+alias dud='du -d0'
 
 #alias  L=' | less'   #Needs ZSH :(
 #alias  G=' | grep'   #Needs ZSH :(
@@ -47,3 +53,4 @@ GREEN="\[\033[1;32m\]"
 export PS1=" \W$BLUE\$(parse_git_branch)$GREEN\$(parse_svn_branch)$BLACK "
 export SVN_EDITOR=vim
 export PATH=$PATH":/home/nikola/.scripts"
+export EDITOR=vim

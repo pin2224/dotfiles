@@ -16,8 +16,11 @@ alt + {[,]}
 	bspc window {older,newer} -f; \
 	bspc control --record-history on
 
-super + {_,shift + }{h,j,k,l}
-	bspc window -{f,s} {left,down,up,right}
+super + {h,j,k,l}
+    move_win {-30 0,0 30, 0 -30, 30 0}
+ 
+super + shift + {h,j,k,l}
+	bspc window -s {left,down,up,right}
 
 alt + {_,shift + } Tab
 	bspc window -f {next,prev}
@@ -69,15 +72,16 @@ super + space
 	~/.scripts/app_run
 
 super + slash
-    ~/.scripts/brightness +10
+    ~/.scripts/brightness +5
 
 super + period
-    ~/.scripts/brightness -10
+    ~/.scripts/brightness -5
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-XF86Audio{Prev,Next}
-               mpc -q {prev,next}
+XF86Audio{Prev,Next,Pause,Play}
+               mpc -q {prev,next,toggle,toggle}
+
 
